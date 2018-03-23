@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>random</title>
+</head>
+
+<style type="text/css">
+ body {background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUcXa9XZc91ipQxwrbf4PUvRqGAbc00Taa8DREbNvQXGpAyJmyJQ) no-repeat  fixed ;
+	 background-size: 100% 100%;
+	}
+    #citati{
+        width: 50%;
+        background: white;
+        height: 20px;
+        text-align: center;
+        margin:30px 0px 0px 320px;
+	}
+
+    #kartinka_Pilosopha{
+    	margin: 40px 0 0 550px;	
+    }
+    .veni{
+    	color: gold;
+    }
+</style>
+
+
+
+<body>
+
+
+
+        <div id="kartinka_Pilosopha"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8MAJqvHCnMa53LeMH4WdflLzsp2xSM50XlZqaVflmdT2FGDz3" width=200 height=200></div>
+        <br>
+
+        <div id="citati"></div>
+   
+        <button id="knopka" style="border-color:red; border-radius:30px; 
+        margin:90px 0 0 550px;position: absolute;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGt8v1zsZGZztSw-B8NhuEFQO5_8O3VD81WFT5JjspQiiYE8Dr" width=70 
+        style="vertical-align: middle;border-radius:40px;text-align: center;"> 
+        <b>Нажимай Филосов</b> 
+        </button>
+
+
+<span class="veni"><marquee  behavior="alternate" direction="right"style="color: #D9470D; font-size: 40px; font-weight: bolder; line-height: 150%; text-shadow: #000000 0px 1px 1px;">VENI VIDI VICI</marquee> </span>
+
+<br><br><br><br><br><br><br>
+
+
+<marquee behavior="scroll" direction="left"> <img src="http://www.gifki.org/data/media/37/egipet-animatsionnaya-kartinka-0044.gif" /> </marquee>
+
+
+
+
+
+<script type="text/javascript">
+
+var ip=[];
+ip[0]="<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtyQ8MmKUyOWO55ozSZVOkoS2BdwQj2iXaX2lJFEc8ximPqaj3gw' width=200px height=200px  />"
+
+ip[1]="<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOhObSCXrhD67yrImUqdXoBM2m2hoz_MnAyuhDvdlMo_j5f7YP' width=200px height=200px  />"
+
+ip[2]="<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_fx2gKCu-SNcDY3uuDsPcJzUE8G52FCvfdlUDhk4ohLnaXdc0' width=200px height=200px  />"
+
+ip[3]="<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG4VSwYxlPb8ISExxTc2ovndI9kAMkiBuocVtIQiV1DsD3hUnoOQ' width=200px height=200px  />"
+
+ip[4]="<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz2xHSVt-G_Yod7CtZetlr1doUKZMwn9MLbJqWoqJT0_hasGyf' width=200px height=200px  />"
+
+ip[5]="<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZTwuOwolTdnLnk8rR2PMxyv5J6Yime_MbvM9ix-m1GjMuhsE' width=200px height=200px  />";
+
+
+
+    var word = ['Большая империя, как и большой пирог, начинает крошиться с краев.', 
+    'Если не можешь улететь в космос, сделай так, чтобы он прилетел к тебе.', 
+    'Когда мы до конца исследуем космос, окажется, что, будучи здесь, на земле, мы уже были в небе.',
+    'Ну выйдет человечество в космос — и что? На что ему космос, когда не дано вечности?', 
+    'Государство – не Бог, оно не имеет права отнимать то, что не может вернуть, если захочет.', 
+    'Меня ужасает вечное безмолвие этих пространств.',  
+    'Пустота сверху, пустота снизу и еще большая пустота между ними, а в ней я.', 
+    'Лучшее государственное устройство для любого народа – это то, которое сохранило его как целое.',
+    'Тоталитарное государство устанавливает неопровержимые догмы и меняет их со дня на день.',
+	'Чем сильнее падение государства, тем больше у него законов.'];
+
+
+
+        document.getElementById('knopka').onclick=function(){
+        	citati.innerHTML= word[Math.floor(Math.random() * word.length)];
+        	kartinka_Pilosopha.innerHTML=ip[Math.floor(Math.random() * ip.length)];
+}
+
+</script>
+
+
+</body>
+</html>
